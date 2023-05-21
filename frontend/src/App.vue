@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <div class="title">alain</div>
+  <h1>Developer Frontend</h1>
+  <div class="title">Alain Tran</div>
+  <p>new site soon.......</p>
 </template>
 
 <style scoped>
