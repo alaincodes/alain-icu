@@ -25,10 +25,12 @@
     <div class="grid xs:grid-cols-2 gap-6">
       <div>
         <p class="mb-4 text-2xl font-bold">Skills</p>
-        <ul>
-          <li>JavaScript</li>
-          <li>CSS / SCSS / TailwindCSS</li>
-          <li>Responsive UI</li>
+        <ul class="flex gap-4 flex-wrap">
+          <li class="first-letter:font-bold">JavaScript</li>
+          <li class="first-letter:font-bold">CSS</li>
+          <li class="first-letter:font-bold">SCSS</li>
+          <li class="first-letter:font-bold">TailwindCSS</li>
+          <li class="first-letter:font-bold">Responsive UI</li>
         </ul>
       </div>
 
@@ -36,28 +38,28 @@
         <p class="mb-4 text-2xl font-bold">Notable projects with my amazing team</p>
         <ul class="flex gap-4 flex-wrap">
           <li>
-            <a href="https://www.lustucru-selection.fr" target="_blank">Lustucru Selection</a>
+            <a href="https://www.lustucru-selection.fr" target="_blank" class="inline-block first-letter:font-bold">Lustucru Selection</a>
           </li>
           <li>
-            <a href="https://www.panzanifoodservice.com" target="_blank">Panzani Food Service</a>
+            <a href="https://www.panzanifoodservice.com" target="_blank" class="inline-block first-letter:font-bold">Panzani Food Service</a>
           </li>
           <li>
-            <a href="https://www.opsone.net" target="_blank">Opsone</a>
+            <a href="https://www.opsone.net" target="_blank" class="inline-block first-letter:font-bold">Opsone</a>
           </li>
           <li>
-            <a href="https://www.belairmonange.com" target="_blank">Bélair-Monange</a>
+            <a href="https://www.belairmonange.com" target="_blank" class="inline-block first-letter:font-bold">Bélair-Monange</a>
           </li>
           <li>
-            <a href="https://www.delphiayachts.com" target="_blank">Delphiayachts</a>
+            <a href="https://www.delphiayachts.com" target="_blank" class="inline-block first-letter:font-bold">Delphiayachts</a>
           </li>
           <li>
-            <a href="https://www.beneteau.com" target="_blank">Beneteau</a>
+            <a href="https://www.beneteau.com" target="_blank" class="inline-block first-letter:font-bold">Beneteau</a>
           </li>
           <li>
-            <a href="https://www.timevallee.com" target="_blank">TimeVallée</a>
+            <a href="https://www.timevallee.com" target="_blank" class="inline-block first-letter:font-bold">TimeVallée</a>
           </li>
           <li>
-            <a href="https://www.enacr.com/" target="_blank">Enacr (Homepage)</a>
+            <a href="https://www.enacr.com/" target="_blank" class="inline-block first-letter:font-bold">Enacr (Homepage)</a>
           </li>
         </ul>
       </div>
