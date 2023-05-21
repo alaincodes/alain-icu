@@ -27,14 +27,14 @@
     <div class="mx-auto">
       <h2 class="mb-7 text-2xl font-bold">Currently working for <a href="https://www.opsone.net/" target="_blank" class="inline-block p-2 text-[#ffd32f] bg-neutral-900 rotate-2 leading-7">Opsone</a> as Frontend Developer (since November 2019)</h2>
       <ul class="grid xs:grid-cols-2 gap-6">
-        <li class="first-letter:mr-3 first-letter:text-4xl first-letter:font-bold first-letter:float-left">
+        <li class="first-letter:mr-3 first-letter:text-5xl first-letter:font-bold first-letter:float-left">
           Journeying into the world of frontend development specializing in 
           building awesome user interfaces for websites and apps. I bring 
           designs to life and make sure everything runs smoothly. I'm all about 
           making things look great, work well, and provide a user-friendly 
           experience.
         </li>
-        <li class="first-letter:mr-3 first-letter:text-4xl first-letter:font-bold first-letter:float-left">
+        <li class="first-letter:mr-3 first-letter:text-5xl first-letter:font-bold first-letter:float-left">
           Simply put, I find joy in writing clean and organized code! I strive 
           for efficiency, following best practices and coding standards. This way, 
           the codebase is easy to understand, collaborate on, and ready for 
