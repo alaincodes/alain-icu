@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -6,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    screens: {
+      'xs': '480px',
+    },
   },
   plugins: [],
 }
