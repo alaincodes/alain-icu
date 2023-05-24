@@ -4,15 +4,13 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-        'forest-green': '#0B421A',
+        'forest-green': '#2C5F2D',
         'old-lace': '#fcf6e3',
-        'philippine-orange': '#e67219',
+        'gold': '#FFE77A',
         'prussian-blue': '#00334E',
+				'sage': '#CBD18F',
       },
 		},
-		screens: {
-      'xs': '480px',
-    },
 	},
 	plugins: [],
 }
