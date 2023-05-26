@@ -1,21 +1,42 @@
 ---
 export interface Props {
 	title: string;
-	body: string;
 	href: string;
+	js: string;
+	css: string;
+	cms: string;
+	img: string;
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, js, css, cms, img } = Astro.props;
 ---
 
-<li class="p-6 border-2 rounded-sm border-gold">
-	<a href={href} target="_blank">
-		<h2>
+<div class="group relative text-center">
+	<div
+		class="relative h-80 w-full overflow-hidden p-4 border-2 border-beige rounded-lg group-hover:opacity-75"
+	>
+		<img
+			src={img}
+			alt="Project illustration"
+			class="h-full w-full object-contain"
+		/>
+	</div>
+	<h3 class="mt-6 mb-6 text-2xl text-coral-red">
+		<a href={href} target="_blank">
+			<span class="absolute inset-0"></span>
 			{title}
-		</h2>
-		<br />
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+		</a>
+	</h3>
+	<span
+		class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+		>{cms}</span
+	>
+	<span
+		class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+		>{js}</span
+	>
+	<span
+		class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10"
+		>{css}</span
+	>
+</div>

@@ -1,51 +1,76 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import projectsImage from "../images/undraw-web-development.svg";
 ---
 
 <Layout title="Alain Tran - Frontend Developer - Projects list">
-	<div class="grid place-content-center p-6">
-		<ul class="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6">
+	<div class="grid place-content-center mb-12">
+		<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+			<Card
+				href="https://www.beneteau.com"
+				title="Beneteau"
+				cms="Drupal"
+				css="SCSS"
+				js="JavaScript - Stimulus.JS"
+				img="/assets/boat.svg"
+			/>
 			<Card
 				href="https://www.lustucru-selection.fr"
 				title="Lustucru Selection"
-				body="Wordpress - JavaScript - SCSS"
-			/>
-			<Card
-				href="https://www.panzanifoodservice.com"
-				title="Panzani Food Service"
-				body="Wordpress - JavaScript - SCSS"
+				cms="Wordpress"
+				css="SCSS"
+				js="JavaScript"
+				img="/assets/food.svg"
 			/>
 			<Card
 				href="https://www.opsone.net"
 				title="Opsone"
-				body="Wordpress - JavaScript - SCSS"
+				cms="Wordpress"
+				css="SCSS"
+				js="JavaScript"
+				img="/assets/web.svg"
 			/>
 			<Card
 				href="https://www.belairmonange.com"
 				title="Bélair-Monange"
-				body="Drupal - JavaScript - SCSS"
+				cms="Drupal"
+				css="SCSS"
+				js="JavaScript"
+				img="/assets/wine.svg"
 			/>
 			<Card
 				href="https://www.delphiayachts.com"
 				title="Delphiayachts"
-				body="Drupal - StimulusJS - SCSS"
+				cms="Drupal"
+				css="SCSS"
+				js="JavaScript - Stimulus.JS"
+				img="/assets/boat.svg"
 			/>
 			<Card
-				href="https://www.beneteau.com"
-				title="Beneteau"
-				body="Drupal - StimulusJS - SCSS"
+				href="https://www.panzanifoodservice.com"
+				title="Panzani Food Service"
+				cms="Wordpress"
+				css="SCSS"
+				js="JavaScript"
+				img="/assets/food.svg"
 			/>
 			<Card
 				href="https://www.timevallee.com"
 				title="TimeVallée"
-				body="Rails - JavaScript - SCSS"
+				cms="Rails"
+				css="SCSS"
+				js="JavaScript"
+				img="/assets/watche.svg"
 			/>
 			<Card
 				href="https://www.enacr.com/"
 				title="Enacr (Homepage)"
-				body="Rails - JavaScript - SCSS"
+				cms="Rails"
+				css="SCSS"
+				js="JavaScript"
+				img="/assets/artist.svg"
 			/>
-		</ul>
+		</div>
 	</div>
 </Layout>
