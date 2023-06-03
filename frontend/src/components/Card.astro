@@ -6,37 +6,50 @@ export interface Props {
 	css: string;
 	cms: string;
 	img: string;
+	desc: string;
 }
 
-const { href, title, js, css, cms, img } = Astro.props;
+const { href, title, js, css, cms, img, desc } = Astro.props;
 ---
 
-<div class="group relative text-center">
+<div
+	class="group relative grid grid-cols-2 md:grid-cols-3 gap-9 pb-8 border-b-2 border-b-beige last:border-none"
+>
 	<div
-		class="relative h-80 w-full overflow-hidden p-4 border-2 border-beige rounded-lg group-hover:opacity-75"
+		class="relative grid place-content-center col-start-1 col-span-1 w-full overflow-hidden p-4 bg-beige rounded-lg group-hover:opacity-75"
 	>
 		<img
 			src={img}
 			alt="Project illustration"
-			class="h-full w-full object-contain"
+			class="w-80 mx-auto object-contain aspect-square"
 		/>
 	</div>
-	<h2 class="mt-6 mb-6 text-2xl text-coral-red">
-		<a href={href} target="_blank">
-			<span class="absolute inset-0"></span>
-			{title}
-		</a>
-	</h2>
-	<span
-		class="inline-flex items-center rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
-		>{cms}</span
-	>
-	<span
-		class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
-		>{js}</span
-	>
-	<span
-		class="inline-flex items-center rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10"
-		>{css}</span
-	>
+	<div class="col-start-2 col-span-1 md:col-span-2">
+		<h2
+			class="mb-6 text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-semibold text-coral-red break-words"
+		>
+			<a href={href} target="_blank">
+				<span class="absolute inset-0"></span>
+				{title}
+			</a>
+		</h2>
+		<ul class="flex flex-wrap gap-4">
+			<li
+				class="flex-none rounded-md bg-green-50 px-2 py-1 text-xs font-medium text-green-700 ring-1 ring-inset ring-green-600/20"
+			>
+				{cms}
+			</li>
+			<li
+				class="flex-none rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+			>
+				{js}
+			</li>
+			<li
+				class="flex-none rounded-md bg-pink-50 px-2 py-1 text-xs font-medium text-pink-700 ring-1 ring-inset ring-pink-700/10"
+			>
+				{css}
+			</li>
+		</ul>
+		<p>{desc}</p>
+	</div>
 </div>
