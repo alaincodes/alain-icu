@@ -21,7 +21,7 @@ const { title } = Astro.props;
 	</head>
 	<body class="text-lg text-beige bg-blue font-source-code-pro">
 		<div
-			class="grid place-content-center gap-7 max-w-7xl min-h-screen w-full mx-auto py-12 px-6"
+			class="grid place-content-center gap-12 max-w-7xl min-h-screen w-full mx-auto py-12 px-6"
 		>
 			<Head />
 			<slot />
@@ -31,11 +31,6 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-	.neon-text {
-		text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09,
-			0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
-	}
-
 	@font-face {
 		font-family: "Source Code Pro";
 		src: url("/fonts/SourceCodePro-Light.woff2") format("woff2");
