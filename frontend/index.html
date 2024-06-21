@@ -20,7 +20,8 @@
 			>
 			<div x-data="{ open: false }">
 				<button
-					class="text-xl font-medium hover:text-beige duration-300"
+					class="text-xl font-medium hover:text-beige duration-300 animate-heartbeat"
+					:class="{ 'animate-heartbeat': !open }"
 					@click="open = ! open"
 				>
 					Frontend Developer
