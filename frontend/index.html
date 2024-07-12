@@ -1,97 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="I am a Javascript Frontend Developer." />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-		<title>Alain Tran | Frontend developer</title>
-		<link rel="stylesheet" href="/style.css" />
-	</head>
-	<body>
-		<main
-			class="space-y-2 grid place-content-center h-dvh p-6 bg-blue text-coral-red text-center"
-		>
-			<a
-				href="https://www.linkedin.com/in/alain-t-6a95071ba"
-				target="_blank"
-				class="hover:text-beige duration-300"
-				><h1 class="text-2xl font-bold">Alain TRAN</h1></a
-			>
-			<div x-data="{ open: false }">
-				<button
-					class="text-xl font-medium hover:text-beige duration-300 animate-heartbeat"
-					:class="{ 'animate-heartbeat': !open }"
-					@click="open = ! open"
-				>
-					Frontend Developer
-				</button>
-
-				<div x-show="open" @click.outside="open = false" x-transition>
-					<nav>
-						<ul>
-							<li>
-								<a
-									href="https://www.ciamt.org"
-									target="_blank"
-									class="hover:text-beige"
-									>Ciamt</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://www.beneteau.com"
-									target="_blank"
-									class="hover:text-beige"
-									>Beneteau</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://www.delphiayachts.com"
-									target="_blank"
-									class="hover:text-beige"
-									>Delphia Yachts</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://www.lustucru-selection.fr"
-									target="_blank"
-									class="hover:text-beige"
-									>Lustucru Selection</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://www.opsone.net"
-									target="_blank"
-									class="hover:text-beige"
-									>Opsone</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://www.panzanifoodservice.com"
-									target="_blank"
-									class="hover:text-beige"
-									>Panzani Food Service</a
-								>
-							</li>
-							<li>
-								<a
-									href="https://www.belairmonange.com"
-									target="_blank"
-									class="hover:text-beige"
-									>Belair Monange</a
-								>
-							</li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-			<p class="text-xs font-bold">LOL</p>
-		</main>
-		<script type="module" src="/main.js"></script>
-	</body>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
