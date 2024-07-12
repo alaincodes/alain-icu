@@ -36,22 +36,20 @@ const projects = reactive({
 
 <template>
   <main
-    class="space-y-2 grid place-content-center h-dvh p-6 bg-blue text-xl text-coral-red text-center"
+    class="space-y-3 grid place-content-center h-dvh p-6 bg-blue text-xl text-coral-red text-center"
   >
     <nav>
-      <ul>
+      <ul class="flex justify-center flex-wrap gap-x-6 gap-y-4">
         <li v-for="(project, index) in projects" :key="index">
           <a :href="project.url" target="_blank" class="hover:text-beige">{{ project.name }}</a>
         </li>
       </ul>
     </nav>
 
-    <div>
-      <button
-        class="text-xl font-medium hover:text-coral-red duration-300 animate-heartbeat text-beige"
-      >
-        <RouterLink to="/">Go back</RouterLink>
-      </button>
-    </div>
+    <button
+      class="text-xl font-medium hover:text-coral-red duration-300 animate-heartbeat text-beige"
+    >
+      <RouterLink to="/">Go back</RouterLink>
+    </button>
   </main>
 </template>
