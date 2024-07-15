@@ -36,7 +36,7 @@ const projects = reactive({
 
 <template>
   <main
-    class="space-y-3 grid place-content-center h-dvh p-6 bg-blue text-xl text-coral-red text-center"
+    class="space-y-4 grid place-content-center gap-6 h-dvh p-6 bg-blue text-xl text-coral-red text-center"
   >
     <nav>
       <ul class="flex justify-center flex-wrap gap-x-6 gap-y-4">
@@ -46,10 +46,10 @@ const projects = reactive({
       </ul>
     </nav>
 
-    <button
+    <RouterLink
+      to="/"
       class="text-xl font-medium hover:text-coral-red duration-300 animate-heartbeat text-beige"
+      >Go back</RouterLink
     >
-      <RouterLink to="/">Go back</RouterLink>
-    </button>
   </main>
 </template>

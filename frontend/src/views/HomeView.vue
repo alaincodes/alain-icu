@@ -2,9 +2,9 @@
 import { RouterLink } from 'vue-router'
 </script>
 <template>
-  <main class="space-y-2 grid place-content-center h-dvh p-6 bg-blue text-coral-red text-center">
+  <main class="grid place-content-center h-dvh p-6 bg-blue text-coral-red text-center">
     <div
-      class="grid grid-cols-1 place-items-center gap-4 p-6 rounded-lg border border-solid border-coral-red"
+      class="grid grid-cols-1 place-items-center gap-6 p-6 rounded-lg border border-solid border-coral-red"
     >
       <a href="https://www.linkedin.com" target="_blank" class="hover:text-beige duration-300">
         <h1 class="text-2xl font-bold">Alain TRAN</h1>
