@@ -23,14 +23,10 @@ const projects = reactive({
     name: 'Opsone',
     url: 'https://www.opsone.net'
   },
-  'Panzani Food Service': {
-    name: 'Panzani Food Service',
-    url: 'https://www.panzanifoodservice.com'
-  },
   'Belair Monange': {
     name: 'Belair Monange',
     url: 'https://www.belairmonange.com'
-  }
+  },
 })
 </script>
 
