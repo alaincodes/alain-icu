@@ -38,12 +38,24 @@ const projects = reactive({
   <main
     class="space-y-4 grid place-content-center gap-6 h-dvh p-6 bg-blue text-xl text-coral-red text-center"
   >
+    <h2 class="text-beige">Professional projects</h2>
     <nav>
-      <ul class="flex justify-center flex-wrap gap-x-6 gap-y-4">
+      <ul class="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
         <li v-for="(project, index) in projects" :key="index">
           <a :href="project.url" target="_blank" class="hover:text-beige">{{ project.name }}</a>
         </li>
       </ul>
+    </nav>
+
+    <h2 class="text-beige">Personal project</h2>
+    <nav>
+      <a
+        href="https://www.miasin.app"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:text-beige"
+        >Miasin</a
+      >
     </nav>
 
     <RouterLink
